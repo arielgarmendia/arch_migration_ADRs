@@ -26,7 +26,10 @@ In both cases the backend could be using specific *MVC* data and operations such
 > [!IMPORTANT] 
 >
 > **Global Pros**\
-> this is
+> - Removing all the backend side of the *MVC* app will allow us to speed up the loading process.
+> - Clients will have a smoother navigation experience when browsing the website.
+> - Faster maintenance process.
+> - Backend developers will only focus their work in the domain microservices.
 
 > [!CAUTION]  
 >
@@ -36,7 +39,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 ## Desired result after the architecture migration
 ![SPA result](images/ADR-Result.jpg "SPA result")
 
-### In order to achieve the above result, we can divide the migration solutions in two iterations:
+## In order to achieve the above result, we can divide the migration solutions in two iterations:
 
 1. Backend:
 
