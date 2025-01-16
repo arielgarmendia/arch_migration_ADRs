@@ -28,7 +28,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 > **Global Pros**\
 > this is
 
-> [!IMPORTANT]  
+> [!CAUTION]  
 >
 > **Global Cons**\
 > this is
