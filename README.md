@@ -29,7 +29,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 
 	***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** 
 
-	a. [`Assumption 1: Removal of View* and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices.`](ADRs/assumption1.md)
+	a. [`Assumption 1: Removal of Views and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices.`](ADRs/assumption1.md)
 	
 	***ELSE***
 
