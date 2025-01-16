@@ -26,7 +26,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 > [!IMPORTANT] 
 >
 > **Global Pros**
-> - Removing all the backend side of the *MVC* app will allow us to speed up the loading process.
+> - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
 > - Clients will have a smoother navigation experience when browsing the website.
 > - Faster maintenance process.
 > - Backend developers will only focus their work in the domain microservices.
