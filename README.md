@@ -12,9 +12,11 @@ and a high-level delivery approach and steps."*
 ### We can devide the solutions in two iterations:
 
 1. Backend:
+
 	a. ***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** For this specific case we need to only migrate the frontend side. Please refer to iteration 2.a.
 	
 	***ELSE***
+
 	b. [`Assumption 1: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption1.md)
 
 2. Frontend:
