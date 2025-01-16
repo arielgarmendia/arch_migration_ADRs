@@ -23,6 +23,12 @@ This means that the backend side of this application will serve as either:
 
 In both cases the backend could be using specific *MVC* data and operations such as *ViewBag*, *ViewModel* and/or *ViewData* structures, to interact with the Views and finally to bring info into he html results. Changing all this is an essential part of the following migration process.
 
+> [!Global Pros]  
+> Crucial information necessary for users to succeed.
+
+> [!Global Cons]  
+> Crucial information necessary for users to succeed.
+
 ### We can divide the migration solutions in two iterations:
 
 1. Backend:
