@@ -33,7 +33,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 
 > [!CAUTION]  
 >
-> **Global Cons**\
+> **Global Cons**
 > - this is
 > - and this
 
