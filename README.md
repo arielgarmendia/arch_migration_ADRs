@@ -29,6 +29,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 > - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
 > - Clients will have a smoother navigation experience when browsing the website.
 > - Faster maintenance process.
+> - The frontend could be divided into smaller domain bounded micro-websites, same as with the domain microservices, allowing more specialisation in the tribes/teams.
 > - Backend developers will only focus their work in the domain microservices.
 
 > [!CAUTION]  
