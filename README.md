@@ -9,7 +9,7 @@ and a high-level delivery approach and steps."*
 
 ## Assumptions, strategies and migration paths proposals:
 
-Our base assumption is that the frontend application/project is a web *.Net ASP.Net MVC* application, where we use a modern framework as Vue, Angular or React for the achieve a *SPA* functionality. 
+Our base assumption is that the monolith application/project is a web *.Net ASP.Net MVC* application, where we use a modern framework as *Vue*, *Angular* or *React* for the achieve a *SPA* functionality. 
 
 This means that the backend side of this application will serve as either:  
 
