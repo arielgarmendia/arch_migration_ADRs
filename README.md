@@ -13,7 +13,9 @@ and a high-level delivery approach and steps."*
 
 1. Backend:
 
-	a. ***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** For this specific case we need to only migrate the frontend side. Please refer to iteration 2.a.
+	***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** 
+
+	a. For this specific case we need to only migrate the frontend side. Please refer to iteration 2.a.
 	
 	***ELSE***
 
