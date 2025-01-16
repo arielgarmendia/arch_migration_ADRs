@@ -21,7 +21,7 @@ This means that the backend side of this application will serve as either:
 
 2. A mix of proxy logic with the bounded microservices, and some endpoints with internal logic residing in the monolith.
 
-In both cases the backend could be using specific *MVC* data and operations such as *ViewBag*, *ViewModel* and/or *ViewData* structures, to interact with the Views and finally to bring info into he html results. Changing all this is an essential part of the following migration process.
+In both cases the backend could be using specific *MVC* data and operations such as *ViewBag*, *ViewModel* and/or *ViewData* structures, to interact with the Views, all this to finally bring info into the html results. Changing all this is an essential part of the following migration process.
 
 > [!IMPORTANT] 
 >
