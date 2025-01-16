@@ -11,7 +11,7 @@ and a high-level delivery approach and steps."*
 
 Our base assumption is that the monolith application/project is a web *.Net ASP.Net MVC* application, where we use a modern framework as *Vue*, *Angular* or *React* to achieve a *SPA* functionality. 
 
-![MVC Monolith](images/ADR-MVC.jpg?raw=true "MVC Monolith")
+![MVC Monolith](images/ADR-MVC.jpg "MVC Monolith")
 
 This means that the backend side of this application will serve as either:  
 
