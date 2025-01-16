@@ -29,18 +29,18 @@ In both cases the backend could be using specific *MVC* data and operations such
 
 	***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** 
 
-	a. For this specific case we need to only migrate the frontend side. Please refer to iteration 2.a.
+	a. [`Assumption 1: Removal of View* and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices.`](ADRs/assumption1.md)
 	
 	***ELSE***
 
-	b. [`Assumption 1: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption1.md)
+	b. [`Assumption 2: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption2.md)
 
 2. Frontend:
 
 	***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** 
 
-	a. [`Assumption 2`](ADRs/assumption2.md)
+	a. [`Assumption 3`](ADRs/assumption3.md)
 	
 	***ELSE***
  
-	b. Comes right after iteration 1.b has been done. [`Assumption 3: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption3.md)
+	b. [`Assumption 4: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption4.md)
