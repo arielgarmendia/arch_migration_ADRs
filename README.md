@@ -33,6 +33,9 @@ In both cases the backend could be using specific *MVC* data and operations such
 > **Global Cons**\
 > this is
 
+## Desired result after the architecture migration
+![SPA result](images/ADR-Result.jpg "SPA result")
+
 ### We can divide the migration solutions in two iterations:
 
 1. Backend:
