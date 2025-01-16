@@ -19,6 +19,7 @@ and a high-level delivery approach and steps."*
 
 2. Frontend:
 	a. ***IF*** (All API endpoints reside in domain specific microservices) ***THEN*** [`Assumption 2`](ADRs/assumption2.md)
+
 	
 	***ELSE***
 	b. Comes right after iteration 1.b has been done. [`Assumption 3: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption3.md)
