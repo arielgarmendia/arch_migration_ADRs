@@ -34,8 +34,10 @@ In both cases the backend could be using specific *MVC* data and operations such
 > [!CAUTION]  
 >
 > **Global Cons**
-> - this is
-> - and this
+> - Depending on the size and complexity of the *MVC* backend, this enterprise could be time-consuming and somehow tedious.
+> - Will require a mix of resources with different backgrounds, from backend devs with frontend knowledge and frontend devs specialised in the front framwork to be used.
+> - Will require a big testing work, in order to obtain the same functionality as before.
+> - Will probably need a full-stop in developing new features in the "old" *MVC* code, otherwise there´s a high risk of not including them in the new migration.
 
 ## Desired result after the architecture migration
 ![SPA result](images/ADR-Result.jpg "SPA result")
