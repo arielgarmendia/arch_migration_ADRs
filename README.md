@@ -14,11 +14,11 @@ and a high-level delivery approach and steps."*
 1. Backend:
 	a. ***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** For this specific case we need to only migrate the frontend side. Please refer to iteration 2.a.
 	
-		***ELSE***
+	***ELSE***
 	b. [`Assumption 1: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption1.md)
 
 2. Frontend:
 	a. ***IF*** (All API endpoints reside in domain specific microservices) ***THEN*** [`Assumption 2`](ADRs/assumption2.md)
 	
-		***ELSE***
+	***ELSE***
 	b. Comes right after iteration 1.b has been done. [`Assumption 3: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption3.md)
