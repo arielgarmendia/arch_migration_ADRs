@@ -29,7 +29,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 > - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
 > - Clients will have a smoother navigation experience when browsing the website.
 > - Faster maintenance process.
-> - The frontend could be divided into smaller domain bounded micro-websites, same as with the domain microservices, allowing more specialisation in the tribes/teams.
+> - **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
 > - Backend developers will only focus their work in the domain microservices.
 
 > [!CAUTION]  
@@ -40,8 +40,11 @@ In both cases the backend could be using specific *MVC* data and operations such
 > - Will require a big testing work, in order to obtain the same functionality as before.
 > - Will probably need a full-stop in developing new features in the "old" *MVC* code, otherwise there´s a high risk of not including them in the new migration.
 
-## Desired result after the architecture migration
+## Desired result after the architecture migration with a global SPA dockerised/containerised website
 ![SPA result](images/ADR-Result.jpg "SPA result")
+
+## Desired result after the architecture migration with the SPA website divided into dockerised/containerised micro-frontends
+![Micro-frontends result](images/ADR-Micro-frontends.jpg "Micro-frontends result")
 
 ## In order to achieve the above result, we can divide the migration solutions in two iterations:
 
