@@ -1,4 +1,4 @@
-# {short title, representative of solved problem and found solution}
+# FRONTEND work: All API endpoints reside in domain specific microservices
 
 ## Context and Problem Statement
 

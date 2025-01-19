@@ -1,4 +1,4 @@
-# {short title, representative of solved problem and found solution}
+# FRONTEND work: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith
 
 ## Context and Problem Statement
 
@@ -31,6 +31,8 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 
 <!-- This is an optional element. Feel free to remove. -->
 ### Confirmation
+
+- This work will follow [`Backend Assumption 1`](ADRs/assumption1.md) and [`Backend Assumption 2`](ADRs/assumption2.md) work.
 
 {Describe how the implementation / compliance of the ADR can/will be confirmed. Is there any automated or manual fitness function? If so, list it and explain how it is applied. Is the chosen design and its implementation in line with the decision? E.g., a design/code review or a test with a library such as ArchUnit can help validate this. Note that although we classify this element as optional, it is included in many ADRs.}
 

@@ -50,13 +50,11 @@ In both cases the backend could be using specific *MVC* data and operations such
 
 1. Backend:
 
-	***IF*** **All API endpoints reside in domain specific microservices** ***THEN*** 
-
 	a. [`Assumption 1: Removal of Views and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices.`](ADRs/assumption1.md)
 	
-	***ELSE***
+	***IF*** **Some API endpoints reside in domain specific microservices and others reside in the MVC monolith** ***THEN*** 
 
-	b. [`Assumption 2: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption2.md)
+	b. [`Assumption 2`](ADRs/assumption2.md)
 
 2. Frontend:
 
@@ -67,3 +65,6 @@ In both cases the backend could be using specific *MVC* data and operations such
 	***ELSE***
  
 	b. [`Assumption 4: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption4.md)
+
+## Full workflow
+![Full workflow](images/ADR-Workflow.jpg "Full workflow") 
