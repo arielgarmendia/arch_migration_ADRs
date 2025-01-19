@@ -37,29 +37,19 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 <!-- This is an optional element. Feel free to remove. -->
 ## Pros and Cons of the Options
 
-### {title of option 1}
+> [!IMPORTANT] 
+>
+> **Pros**
+> - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
+> - Clients will have a smoother navigation experience when browsing the website.
+> - Faster maintenance process.
+> - **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
+> - Backend developers will only focus their work in the domain microservices.
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
-
-### {title of other option}
-
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
-
-<!-- This is an optional element. Feel free to remove. -->
-## More Information
-
-{You might want to provide additional evidence/confidence for the decision outcome here and/or document the team agreement on the decision and/or define when/how this decision the decision should be realized and if/when it should be re-visited. Links to other decisions and resources might appear here as well.}
+> [!CAUTION]  
+>
+> **Cons**
+> - Depending on the size and complexity of the *MVC* backend, this enterprise could be time-consuming and somehow tedious.
+> - Will require a mix of resources with different backgrounds, from backend devs with frontend knowledge and frontend devs specialised in the front framwork to be used.
+> - Will require a big testing work, in order to obtain the same functionality as before.
+> - Will probably need a full-stop in developing new features in the "old" *MVC* code, otherwise there´s a high risk of not including them in the new migration.
