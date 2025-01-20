@@ -2,40 +2,35 @@
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+> Context:
 
-<!-- This is an optional element. Feel free to remove. -->
-## Decision Drivers
+When usinig an *MVC .Net* monolith strategy, the controllers send to the views important information in saveral structures created for this purpuse.
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+- *ViewModel*: here we normally send to the view collections or specific daya objects, in order to create information tables, specific configuration info, etc.
+- *ViewData* and *ViewBag*: Used in a similar way, we pass information to the views in a dynamic way.
+
+> Problem Statement:
+
+- This usually has a performace impact, as it requires framework processing an more layers involved in the process.
+- Dynamic structures should be avoided, giving preference to strongly typed values or *JSON* structures.
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* Identify for each controller/view pair, a domain bounded microservice, if it doesn´t exist then we need to create a new one.
+* Create new endpoints for handling and returning configuration structures, data lists or single objects, al related to a specific domain.
+* Document the outcome, to allow in a next iteration the insertion of the references to these endpoints.
+* Endopoints must retorn *JSON* structures.
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+- The list of new endpoints, domain bounded, which will reside in the corresponding domain microservice.
+- Full documentation of the above, including parameters and results.
+- Use an *OpenAPI* structured document.
 
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
-
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
-
-<!-- This is an optional element. Feel free to remove. -->
 ### Confirmation
 
-{Describe how the implementation / compliance of the ADR can/will be confirmed. Is there any automated or manual fitness function? If so, list it and explain how it is applied. Is the chosen design and its implementation in line with the decision? E.g., a design/code review or a test with a library such as ArchUnit can help validate this. Note that although we classify this element as optional, it is included in many ADRs.}
-
-<!-- This is an optional element. Feel free to remove. -->
-## Pros and Cons of the Options
+- Review de documentation.
+- Access tests based on provided i.e. Postman collections.
 
 > [!IMPORTANT] 
 >
@@ -43,8 +38,6 @@ Chosen option: "{title of option 1}", because {justification. e.g., only option,
 > - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
 > - Clients will have a smoother navigation experience when browsing the website.
 > - Faster maintenance process.
-> - **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
-> - Backend developers will only focus their work in the domain microservices.
 
 > [!CAUTION]  
 >
