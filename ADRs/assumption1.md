@@ -19,7 +19,7 @@ When usinig an *MVC .Net* monolith strategy, the controllers send to the views i
 * Identify for each controller/view pair, a domain bounded microservice, if it doesn´t exist then we need to create a new one.
 * Create new endpoints for handling and returning configuration structures, data lists or single objects, al related to a specific domain.
 * Document the outcome, to allow in a next iteration the insertion of the references to these endpoints.
-* Endopoints must retorn *JSON* structures.
+* Endopoints must return *JSON* structures.
 
 ## Decision Outcome
 
@@ -31,6 +31,8 @@ When usinig an *MVC .Net* monolith strategy, the controllers send to the views i
 
 - Review de documentation.
 - Access tests based on provided i.e. Postman collections.
+
+## Pros and Cons of the Options
 
 > [!IMPORTANT] 
 >
