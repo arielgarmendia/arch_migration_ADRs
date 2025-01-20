@@ -72,5 +72,5 @@ This second base assumption removes the posibility of going into the *Blazor* pa
 ## Full workflow of the two iterations that should take place in order to achieve the architecture migration
 ![Full workflow](images/ADR-Workflow.jpg "Full workflow") 
 
-## After the architecture migration, we could introduce a new iteration in the frontend side: the *SPA* website divided into micro-frontends*
+## After the architecture migration, we could introduce a new iteration in the frontend side: the *SPA* website divided into *micro-frontends*
 ![Micro-frontends result](images/ADR-Micro-frontends.jpg "Micro-frontends result")
