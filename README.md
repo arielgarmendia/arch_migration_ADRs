@@ -60,19 +60,17 @@ This second base assumption removes the posibility of going into the *Blazor* pa
 
 	***THEN*** 
 
-	b. [`Assumption 2`](ADRs/assumption2.md)
+	b. [`Assumption 2: Move endpoints residing in MVC monolith to specific domain microservices.`](ADRs/assumption2.md)
 
 2. Frontend:
 
-	***IF*** **(All API endpoints reside in domain specific microservices)**							 
+	a. [`Assumption 3: Wire new endpoints generated from removal of old backend structures.`](ADRs/assumption3.md)
+	
+	***IF*** **(Some API endpoints reside in domain specific microservices and others reside in the MVC monolith)**							 
     
 	***THEN*** 
 
-	a. [`Assumption 3`](ADRs/assumption3.md)
-	
-	***ELSE***
- 
-	b. [`Assumption 4: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption4.md)
+	b. [`Assumption 4: Wire new endpoints generated from removal of old endpoints in the MVC monolith.`](ADRs/assumption4.md)
 
 ## Full workflow of the two iterations that should take place in order to achieve the architecture migration
 ![Full workflow](images/ADR-Workflow.jpg "Full workflow") 

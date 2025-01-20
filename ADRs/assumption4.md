@@ -1,4 +1,4 @@
-# FRONTEND work: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith
+# FRONTEND work: Wire new endpoints generated from removal of old endpoints in the MVC monolith
 
 ## Context and Problem Statement
 

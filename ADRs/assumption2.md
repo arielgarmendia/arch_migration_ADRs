@@ -1,4 +1,4 @@
-# BACKEND work: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith
+# BACKEND work: Move endpoints residing in MVC monolith to specific domain microservices
 
 ## Context and Problem Statement
 

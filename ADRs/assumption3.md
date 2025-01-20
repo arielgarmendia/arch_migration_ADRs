@@ -1,4 +1,4 @@
-# FRONTEND work: All API endpoints reside in domain specific microservices
+# FRONTEND work: Wire new endpoints generated from removal of old backend structures
 
 ## Context and Problem Statement
 
