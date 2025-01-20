@@ -70,5 +70,5 @@ This second base assumption removes the posibility of going into the *Blazor* pa
  
 	b. [`Assumption 4: Some API endpoints reside in domain specific microservices and others reside in the MVC monolith.`](ADRs/assumption4.md)
 
-## Full workflow
+## Full workflow of the two iterations that should take place in order to achieve the architecture migration
 ![Full workflow](images/ADR-Workflow.jpg "Full workflow") 
