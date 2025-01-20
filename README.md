@@ -29,8 +29,8 @@ In both cases the backend could be using specific *MVC* data and operations such
 > - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
 > - Clients will have a smoother navigation experience when browsing the website.
 > - Faster maintenance process.
-> - **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
 > - Backend developers will only focus their work in the domain microservices.
+> - **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
 
 > [!CAUTION]  
 >
@@ -47,16 +47,13 @@ This second base assumption removes the posibility of going into the *Blazor* pa
 ## Desired result after the architecture migration with a global SPA dockerised/containerised website
 ![SPA result](images/ADR-Result.jpg "SPA result")
 
-## Desired result after the architecture migration with the SPA website divided into dockerised/containerised micro-frontends
-![Micro-frontends result](images/ADR-Micro-frontends.jpg "Micro-frontends result")
-
 ## In order to achieve the above result, we can divide the migration solutions in two iterations:
 
 1. Backend:
 
 	a. [`Assumption 1: Removal of Views and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices.`](ADRs/assumption1.md)
 	
-	***IF*** **(Some API endpoints reside in domain specific microservices and others reside in the MVC monolith)** 
+	***IF*** **(Some *API* endpoints reside in domain specific microservices and others reside in the *MVC* monolith)** 
 
 	***THEN*** 
 
@@ -66,7 +63,7 @@ This second base assumption removes the posibility of going into the *Blazor* pa
 
 	a. [`Assumption 3: Wire new endpoints generated from removal of old backend structures.`](ADRs/assumption3.md)
 	
-	***IF*** **(Some API endpoints reside in domain specific microservices and others reside in the MVC monolith)**							 
+	***IF*** **(Some *API* endpoints reside in domain specific microservices and others reside in the *MVC* monolith)**							 
     
 	***THEN*** 
 
@@ -74,3 +71,6 @@ This second base assumption removes the posibility of going into the *Blazor* pa
 
 ## Full workflow of the two iterations that should take place in order to achieve the architecture migration
 ![Full workflow](images/ADR-Workflow.jpg "Full workflow") 
+
+## After the architecture migration, we could introduce a new iteration in the frontend side: the *SPA* website divided into *dockerised/containerised micro-frontends*
+![Micro-frontends result](images/ADR-Micro-frontends.jpg "Micro-frontends result")
