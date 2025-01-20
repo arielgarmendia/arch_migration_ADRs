@@ -25,7 +25,7 @@ If the above is a true assumption, then this is the time to do this migration wo
 - Use an *OpenAPI* structured document.
 - Unit testing assurance.
 
-### Confirmation
+## Confirmation
 
 - Review de documentation.
 - Access tests based on provided i.e. Postman collections.

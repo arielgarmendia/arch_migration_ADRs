@@ -28,7 +28,7 @@ Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers u
 - Correct validation rules.
 - Unit testing assurance.
 
-### Confirmation
+## Confirmation
 
 - Manage to reproduce the exact behaviour as with the old *MVC* application.
 
