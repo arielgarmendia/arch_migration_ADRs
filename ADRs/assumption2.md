@@ -2,64 +2,44 @@
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+> Context
 
-<!-- This is an optional element. Feel free to remove. -->
-## Decision Drivers
+As the word monolith stands, these are applications that encapsulate all services and layers in a single estructure.
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+Also, even when we decouple services into small external web services, and create modern microservice´s structures, we maintain some legacy access points in the monolith itself. This because either we cannot manage to identify specific domains or because we just let them live in the monolith.
+
+> Problem Statement
+
+If the above is a true assumption, then this is the time to do this migration work.
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* Identify the specify domain where these endpoints will reside.
+* If a domain bounded microservice corresponding to a group of endpoints exists, then we need to move it to this one.
+* If it doesn´t exist, we need to create one, and the corresponding infrastructure; then we have to move the endpoint(s) into the corresponding microservice.
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+- The list of new endpoints, domain bounded, which will reside in the corresponding domain microservice.
+- Full documentation of the above, including parameters and results.
+- Use an *OpenAPI* structured document.
 
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
-
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
-
-<!-- This is an optional element. Feel free to remove. -->
 ### Confirmation
 
-{Describe how the implementation / compliance of the ADR can/will be confirmed. Is there any automated or manual fitness function? If so, list it and explain how it is applied. Is the chosen design and its implementation in line with the decision? E.g., a design/code review or a test with a library such as ArchUnit can help validate this. Note that although we classify this element as optional, it is included in many ADRs.}
+- Review de documentation.
+- Access tests based on provided i.e. Postman collections.
 
-<!-- This is an optional element. Feel free to remove. -->
 ## Pros and Cons of the Options
 
-### {title of option 1}
+> [!IMPORTANT] 
+>
+> **Pros**
+> - Backend developers will only focus their work in the domain microservices.
+> - Domains will be more specific and will contain more robust implementations.
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
-
-### {title of other option}
-
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
-
-<!-- This is an optional element. Feel free to remove. -->
-## More Information
-
-{You might want to provide additional evidence/confidence for the decision outcome here and/or document the team agreement on the decision and/or define when/how this decision the decision should be realized and if/when it should be re-visited. Links to other decisions and resources might appear here as well.}
+> [!CAUTION]  
+>
+> **Cons**
+> - Depending on the size and complexity of the *MVC* backend, this enterprise could be time-consuming and somehow tedious.
+> - Will require a big testing work, in order to obtain the same functionality as before.
+> - Will probably need a full-stop in developing new features in the "old" *MVC* code, otherwise there´s a high risk of not including them in the new migration.
