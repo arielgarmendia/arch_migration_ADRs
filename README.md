@@ -42,7 +42,7 @@ In both cases the backend could be using specific *MVC* data and operations such
 
 > Our <ins>***Second Base Assumption***</ins> is that we will migrate the frontend applicaton into a full web application using one or many modern frontend frameworks such as *Vue*, *Angular* and/or *React*.
 
-This second base assumption removes the posibility of going into the *Blazor* path, as this one will lead us into a completely different scenaio.
+This second base assumption removes the posibility of going into the *Blazor* path, as this one will lead us into a completely different scenario.
 
 ## Desired result after the architecture migration with a global SPA dockerised/containerised website
 ![SPA result](images/ADR-Result.jpg "SPA result")
