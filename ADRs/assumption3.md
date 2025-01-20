@@ -2,64 +2,48 @@
 
 ## Context and Problem Statement
 
-{Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}
+Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices`](ADRs/assumption1.md), we need to execute this one.
 
-<!-- This is an optional element. Feel free to remove. -->
-## Decision Drivers
+> Context
 
-* {decision driver 1, e.g., a force, facing concern, …}
-* {decision driver 2, e.g., a force, facing concern, …}
-* … <!-- numbers of drivers can vary -->
+- We have a new set of endpoints gouped in domain specific context, either in new domain bounded microservices or added to existing domain microservices.
+- Those endpoints represent operations coming from old nackend structures such as ViewMode, ViewData and/or ViewBag.
+- We assume we have will documented all these processes and we also have a set of i.e. *Postman* collections.
+
+> Problem Statement
+
+- We need to integrate all those new endpoints in html pages using frontend components based in *Vue*, *Angular* and/or *React* frameworks.
+- Connsider this the post rendering of the *Views* in *MVC* pattern.
 
 ## Considered Options
 
-* {title of option 1}
-* {title of option 2}
-* {title of option 3}
-* … <!-- numbers of options can vary -->
+* Identify the specific html page(s) where these endpoints will be pointing at.
+* Create framework specific components to interact with these new endpoints.
+* Bind html components to the data returned from the endpoints, using *JSON* model.
 
 ## Decision Outcome
 
-Chosen option: "{title of option 1}", because {justification. e.g., only option, which meets k.o. criterion decision driver | which resolves force {force} | … | comes out best (see below)}.
+- Well designed components.
+- Correct error processing.
+- Correct validation rules.
+- Unit testing assurance.
 
-<!-- This is an optional element. Feel free to remove. -->
-### Consequences
-
-* Good, because {positive consequence, e.g., improvement of one or more desired qualities, …}
-* Bad, because {negative consequence, e.g., compromising one or more desired qualities, …}
-* … <!-- numbers of consequences can vary -->
-
-<!-- This is an optional element. Feel free to remove. -->
 ### Confirmation
 
-{Describe how the implementation / compliance of the ADR can/will be confirmed. Is there any automated or manual fitness function? If so, list it and explain how it is applied. Is the chosen design and its implementation in line with the decision? E.g., a design/code review or a test with a library such as ArchUnit can help validate this. Note that although we classify this element as optional, it is included in many ADRs.}
+- Manage to reproduce the exact behaviour as with the old *MVC* application.
 
-<!-- This is an optional element. Feel free to remove. -->
 ## Pros and Cons of the Options
 
-### {title of option 1}
+> [!IMPORTANT] 
+>
+> **Pros**
+> - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
+> - Clients will have a smoother navigation experience when browsing the website.
+> - Faster maintenance process.
 
-<!-- This is an optional element. Feel free to remove. -->
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-<!-- use "neutral" if the given argument weights neither for good nor bad -->
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* … <!-- numbers of pros and cons can vary -->
-
-### {title of other option}
-
-{example | description | pointer to more information | …}
-
-* Good, because {argument a}
-* Good, because {argument b}
-* Neutral, because {argument c}
-* Bad, because {argument d}
-* …
-
-<!-- This is an optional element. Feel free to remove. -->
-## More Information
-
-{You might want to provide additional evidence/confidence for the decision outcome here and/or document the team agreement on the decision and/or define when/how this decision the decision should be realized and if/when it should be re-visited. Links to other decisions and resources might appear here as well.}
+> [!CAUTION]  
+>
+> **Cons**
+> - Depending on the size and complexity of the *MVC* backend, this enterprise could be time-consuming and somehow tedious.
+> - Will require a big testing work, in order to obtain the same functionality as before.
+> - Will probably need a full-stop in developing new features in the "old" *MVC* code, otherwise there´s a high risk of not including them in the new migration.

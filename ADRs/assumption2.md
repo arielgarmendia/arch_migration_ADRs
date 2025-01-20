@@ -14,7 +14,7 @@ If the above is a true assumption, then this is the time to do this migration wo
 
 ## Considered Options
 
-* Identify the specify domain where these endpoints will reside.
+* Identify the specific domain where these endpoints will reside.
 * If a domain bounded microservice corresponding to a group of endpoints exists, then we need to move it to this one.
 * If it doesn´t exist, we need to create one, and the corresponding infrastructure; then we have to move the endpoint(s) into the corresponding microservice.
 
@@ -23,6 +23,7 @@ If the above is a true assumption, then this is the time to do this migration wo
 - The list of new endpoints, domain bounded, which will reside in the corresponding domain microservice.
 - Full documentation of the above, including parameters and results.
 - Use an *OpenAPI* structured document.
+- Unit testing assurance.
 
 ### Confirmation
 

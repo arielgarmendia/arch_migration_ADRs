@@ -26,6 +26,7 @@ When usinig an *MVC .Net* monolith strategy, the controllers send to the views i
 - The list of new endpoints, domain bounded, which will reside in the corresponding domain microservice.
 - Full documentation of the above, including parameters and results.
 - Use an *OpenAPI* structured document.
+- Unit testing assurance.
 
 ## Confirmation
 
