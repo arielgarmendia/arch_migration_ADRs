@@ -7,7 +7,7 @@ Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers u
 > Context
 
 - We have a new set of endpoints gouped in domain specific context, either in new domain bounded microservices or added to existing domain microservices.
-- Those endpoints represent operations coming from old nackend structures such as ViewMode, ViewData and/or ViewBag.
+- Those endpoints represent operations coming from old nackend structures such as *ViewMode*, *ViewData* and/or *ViewBag*.
 - We assume we have will documented all these processes and we also have a set of i.e. *Postman* collections.
 
 > Problem Statement
