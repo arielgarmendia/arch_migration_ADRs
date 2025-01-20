@@ -2,7 +2,7 @@
 
 ## Context and Problem Statement
 
-Right after the execution of [`Assumption 2: Move endpoints residing in MVC monolith to specific domain microservices`](ADRs/assumption2.md), we need to execute this one.
+Right after the execution of [`Assumption 2: Move endpoints residing in MVC monolith to specific domain microservices`](assumption2.md), we need to execute this one.
 
 > Context
 

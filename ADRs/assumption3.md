@@ -2,7 +2,7 @@
 
 ## Context and Problem Statement
 
-Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices`](ADRs/assumption1.md), we need to execute this one.
+Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers use of ViewModel, ViewData and/or ViewBag structures. Move the processes to specific domain microservices`](assumption1.md), we need to execute this one.
 
 > Context
 
