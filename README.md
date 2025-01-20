@@ -9,7 +9,7 @@ and a high-level delivery approach and steps."*
 
 ## Assumptions, strategies and migration paths proposals:
 
-Our base assumption is that the monolith application/project is a web *.Net ASP.Net MVC* application, where we use a modern framework as *Vue*, *Angular* or *React* to achieve a *SPA* functionality. 
+> Our <ins>***First Base Assumption***</ins> is that the monolith application/project is a web *.Net ASP.Net MVC* application, where we use a modern framework as *Vue*, *Angular* or *React* to achieve a *SPA* functionality. 
 
 ![MVC Monolith](images/ADR-MVC.jpg "MVC Monolith")
 
@@ -39,6 +39,10 @@ In both cases the backend could be using specific *MVC* data and operations such
 > - Will require a mix of resources with different backgrounds, from backend devs with frontend knowledge and frontend devs specialised in the front framwork to be used.
 > - Will require a big testing work, in order to obtain the same functionality as before.
 > - Will probably need a full-stop in developing new features in the "old" *MVC* code, otherwise there´s a high risk of not including them in the new migration.
+
+> Our <ins>***Second Base Assumption***</ins> is that we will migrate the frontend applicaton into a full web application using one or many modern frontend frameworks such as *Vue*, *Angular* and/or *React*.
+
+This second base assumption removes the posibility of going into the *Blazor* path, as this one will lead us into a completely different scenaio.
 
 ## Desired result after the architecture migration with a global SPA dockerised/containerised website
 ![SPA result](images/ADR-Result.jpg "SPA result")
