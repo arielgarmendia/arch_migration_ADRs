@@ -40,7 +40,7 @@ Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers u
 > - Removing all the backend side of the *MVC* app will allow to speed up the loading process.
 > - Clients will have a smoother navigation experience when browsing the website.
 > - Faster maintenance process.
-> - If [`Assumption 4`](assumption4) is not required: **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
+> - If [`Assumption 4`](assumption4.md) is not required: **The frontend could be divided into smaller domain bounded micro-frontends, each one using it´s corresponding domain microservices, allowing more specialisation in the tribes/teams**.
 
 > [!CAUTION]  
 >
