@@ -12,25 +12,25 @@ Also, even when we decouple services into small external web services, and creat
 
 If the above is a true assumption, then this is the time to do this migration work.
 
-## Considered Options
+## Considered Options | Solution
 
 * Identify the specific domain where these endpoints will reside.
 * If a domain bounded microservice corresponding to a group of endpoints exists, then we need to move it to this one.
 * If it doesn´t exist, we need to create one, and the corresponding infrastructure; then we have to move the endpoint(s) into the corresponding microservice.
 
-## Decision Outcome
+## Decision Outcome | Results
 
 - The list of new endpoints, domain bounded, which will reside in the corresponding domain microservice.
 - Full documentation of the above, including parameters and results.
 - Use an *OpenAPI* structured document.
 - Unit testing assurance.
 
-## Confirmation
+## Confirmation | Verification
 
 - Review de documentation.
 - Access tests based on provided i.e. Postman collections.
 
-## Pros and Cons of the Options
+## Pros and Cons
 
 > [!IMPORTANT] 
 >

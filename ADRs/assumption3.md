@@ -15,24 +15,24 @@ Right after the execution of [`Assumption 1: Removal of Views and Conrtrollers u
 - We need to integrate all those new endpoints in html pages using frontend components based in *Vue*, *Angular* and/or *React* frameworks.
 - Connsider this the post rendering of the *Views* in *MVC* pattern.
 
-## Considered Options
+## Considered Options | Solution
 
 * Identify the specific html page(s) where these endpoints will be pointing at.
 * Create framework specific components to interact with these new endpoints.
 * Bind html components to the data returned from the endpoints, using *JSON* model.
 
-## Decision Outcome
+## Decision Outcome | Results
 
 - Well designed components.
 - Correct error processing.
 - Correct validation rules.
 - Unit testing assurance.
 
-## Confirmation
+## Confirmation | Verification
 
 - Manage to reproduce the exact behaviour as with the old *MVC* application.
 
-## Pros and Cons of the Options
+## Pros and Cons
 
 > [!IMPORTANT] 
 >

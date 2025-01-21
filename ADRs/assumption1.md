@@ -14,26 +14,26 @@ When usinig an *MVC .Net* monolith strategy, the controllers send to the views i
 - This usually has a performace impact, as it requires framework processing an more layers involved in the process.
 - Dynamic structures should be avoided, giving preference to strongly typed values or *JSON* structures.
 
-## Considered Options
+## Considered Options | Solution
 
 * Identify for each controller/view pair, a domain bounded microservice, if it doesn´t exist then we need to create a new one.
 * Create new endpoints for handling and returning configuration structures, data lists or single objects, al related to a specific domain.
 * Document the outcome, to allow in a next iteration the insertion of the references to these endpoints.
 * Endopoints must return *JSON* structures.
 
-## Decision Outcome
+## Decision Outcome | Results
 
 - The list of new endpoints, domain bounded, which will reside in the corresponding domain microservice.
 - Full documentation of the above, including parameters and results.
 - Use an *OpenAPI* structured document.
 - Unit testing assurance.
 
-## Confirmation
+## Confirmation | Verification
 
 - Review de documentation.
 - Access tests based on provided i.e. Postman collections.
 
-## Pros and Cons of the Options
+## Pros and Cons
 
 > [!IMPORTANT] 
 >
